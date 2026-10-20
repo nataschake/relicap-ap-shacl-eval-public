@@ -12,8 +12,13 @@
 <body class="level-zero">
 <p class="crumb">All configured repositories</p>
 <h1>All configured repositories</h1>
-<p class="meta">Configured shape repositories. Every measure links to the next level where it is grounded. Timing sum/max use unique SHACL-file validation runs.<br>Click any column header to reorder the table by that measure; the order is kept in the page address so a sorted view can be shared. Full cube data: <a href="dashboard/cube.json">cube.json</a>.<br>Sourced from GraphDB repository <code>cim-shacl</code>, named graph <code>https://github.com/entsoe/application-profiles/SHACL/reports</code> — 91 runs recorded for 91 SHACL files, one latest recorded run per file (<a href="dashboard/runs/index.html">run history</a>). History keeps the last 2 timing(s) per SHACL file and the results of the newest 1. No previous run to compare against yet. 2 report(s) in the graph carry no <code>ex:file</code> and cannot be attributed to a SHACL file; their results are excluded.</p>
-<div class="stats-panel"><div class="stats"><div class="stat"><span>Time total</span><strong><a href="#sort=time_sum">1m 56.0s</a></strong></div><div class="stat"><span>Time max</span><strong><a href="#sort=time_max">39.986s</a></strong></div><div class="stat"><span>Errors</span><strong><a href="#sort=v_count">1801</a></strong></div><div class="stat"><span>Distinct errors</span><strong><a href="#sort=dv_count">50</a></strong></div><div class="stat"><span>Warnings</span><strong><a href="#sort=w_count">313</a></strong></div><div class="stat"><span>Distinct warnings</span><strong><a href="#sort=dw_count">1</a></strong></div><div class="stat"><span>Good shapes</span><strong><a href="#sort=g_count">13721</a></strong></div><div class="stat"><span>Total shapes</span><strong><a href="#sort=t_count">13772</a></strong></div><div class="stat"><span>Validation execution errors</span><strong><a href="dashboard/all/m/execution_err/index.html">15</a></strong></div></div></div>
+<p class="meta">Configured shape repositories. Timing sum/max use unique SHACL-file validation runs.<br>
+Click any column header to reorder the table by that measure<br>
+Full cube data: <a href="dashboard/cube.json">cube.json</a>.<br>
+Sourced from GraphDB repository <code>relicapgrid</code>, named graph <code>https://github.com/entsoe/application-profiles/SHACL/reports</code> — 0 runs recorded for 0 SHACL files, one latest recorded run per file (<a href="dashboard/runs/index.html">run history</a>). <br>
+History keeps the last 2 timing(s) per SHACL file and the results of the newest 1. <br>
+No previous run to compare against yet.</p>
+<div class="stats-panel"><div class="stats"><div class="stat"><span>Time total</span><strong><a href="#sort=time_sum">0.000s</a></strong></div><div class="stat"><span>Time max</span><strong>—</strong></div><div class="stat"><span>Errors</span><strong></strong></div><div class="stat"><span>Distinct errors</span><strong></strong></div><div class="stat"><span>Warnings</span><strong></strong></div><div class="stat"><span>Distinct warnings</span><strong></strong></div><div class="stat"><span>Good shapes</span><strong><a href="#sort=g_count">13772</a></strong></div><div class="stat"><span>Total shapes</span><strong><a href="#sort=t_count">13772</a></strong></div><div class="stat"><span>Validation execution errors</span><strong><a href="dashboard/all/m/execution_err/index.html">106</a></strong></div></div></div>
 
 <div class="table-wrap">
 <table class="family-table compact" data-rows="dashboard/all/rows.json" data-page-size="1500">
@@ -23,9 +28,9 @@
 <thead>
 <tr>
 <th class="profile sortable" rowspan="2" data-sort="name">Repository</th>
-<th class="num" colspan="2">Timing</th>
-<th class="num group-err" colspan="2"><span class="icon violation" title="sh:Violation">&#10060;</span> Errors</th>
-<th class="num group-warn" colspan="2"><span class="icon warning" title="sh:Warning">&#9888;</span> Warnings</th>
+<th class="num sortable" colspan="2" data-sort="time_sum">Timing</th>
+<th class="num group-err sortable" colspan="2" data-sort="v_count"><span class="icon violation" title="sh:Violation">&#10060;</span> Errors</th>
+<th class="num group-warn sortable" colspan="2" data-sort="w_count"><span class="icon warning" title="sh:Warning">&#9888;</span> Warnings</th>
 <th class="num sortable" rowspan="2" data-sort="g_count"><span class="icon good" title="good shape">&#128994;</span> Good</th>
 <th class="num sortable" rowspan="2" data-sort="t_count">Total</th>
 </tr>
@@ -40,23 +45,23 @@
 </thead>
 <tbody><tr>
 <td class="profile"><a href="dashboard/r/cgmes-ap/index.html">CGMES Application Profiles</a></td>
-<td class="dur"><a href="dashboard/r/cgmes-ap/index.html#sort=time_sum">42.008s</a></td>
-<td class="dur"><a href="dashboard/r/cgmes-ap/index.html#sort=time_max">15.542s</a></td>
-<td class="num cell"><a href="dashboard/r/cgmes-ap/index.html#sort=v_count">76</a></td>
-<td class="num cell"><a href="dashboard/r/cgmes-ap/index.html#sort=dv_count">2</a></td>
+<td class="dur"><a href="dashboard/r/cgmes-ap/index.html#sort=time_sum">0.000s</a></td>
+<td class="dur"><a href="dashboard/r/cgmes-ap/index.html#sort=time_max">—</a></td>
 <td class="num cell"></td>
 <td class="num cell"></td>
-<td class="num cell"><a href="dashboard/r/cgmes-ap/index.html#sort=g_count">8737</a></td>
+<td class="num cell"></td>
+<td class="num cell"></td>
+<td class="num cell"><a href="dashboard/r/cgmes-ap/index.html#sort=g_count">8739</a></td>
 <td class="num cell"><a href="dashboard/r/cgmes-ap/index.html#sort=t_count">8739</a></td>
 </tr><tr>
 <td class="profile"><a href="dashboard/r/nc-ap/index.html">Network Code Application Profiles</a></td>
-<td class="dur"><a href="dashboard/r/nc-ap/index.html#sort=time_sum">1m 14.0s</a></td>
-<td class="dur"><a href="dashboard/r/nc-ap/index.html#sort=time_max">39.986s</a></td>
-<td class="num cell"><a href="dashboard/r/nc-ap/index.html#sort=v_count">1725</a></td>
-<td class="num cell"><a href="dashboard/r/nc-ap/index.html#sort=dv_count">48</a></td>
-<td class="num cell"><a href="dashboard/r/nc-ap/index.html#sort=w_count">313</a></td>
-<td class="num cell"><a href="dashboard/r/nc-ap/index.html#sort=dw_count">1</a></td>
-<td class="num cell"><a href="dashboard/r/nc-ap/index.html#sort=g_count">4984</a></td>
+<td class="dur"><a href="dashboard/r/nc-ap/index.html#sort=time_sum">0.000s</a></td>
+<td class="dur"><a href="dashboard/r/nc-ap/index.html#sort=time_max">—</a></td>
+<td class="num cell"></td>
+<td class="num cell"></td>
+<td class="num cell"></td>
+<td class="num cell"></td>
+<td class="num cell"><a href="dashboard/r/nc-ap/index.html#sort=g_count">5033</a></td>
 <td class="num cell"><a href="dashboard/r/nc-ap/index.html#sort=t_count">5033</a></td>
 </tr></tbody>
 </table></div>
