@@ -3,22 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>All configured repositories · SHACL cube</title>
+<title>All data repositories · SHACL cube</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="dashboard.css?v=6645f890d77e">
 </head>
 <body class="level-zero">
-<p class="crumb">All configured repositories</p>
-<h1>All configured repositories</h1>
-<p class="meta">Configured shape repositories. Timing sum/max use unique SHACL-file validation runs.<br>
-Click any column header to reorder the table by that measure<br>
+<p class="crumb">All data repositories</p>
+<h1>All data repositories</h1>
+<p class="meta">Configured GraphDB data repositories. Drill-down is data repository → family → ontology profile → SHACL file → individual shape. Timing sum/max use unique SHACL-file validation runs.<br>
+Click any column header to reorder the table by that measure.<br>
 Full cube data: <a href="dashboard/cube.json">cube.json</a>.<br>
-Sourced from GraphDB repository <code>relicapgrid</code>, named graph <code>https://github.com/entsoe/application-profiles/SHACL/reports</code> — 212 runs recorded for 106 SHACL files, one latest recorded run per file (<a href="dashboard/runs/index.html">run history</a>). <br>
-History keeps the last 2 timing(s) per SHACL file and the results of the newest 1. <br>
-Against the previous run, 106 of 106 files are comparable: 22 slower, 75 faster, 9 unchanged, 1.031s faster overall (<a href="dashboard/runs/index.html">per-file &Delta;</a>).</p>
-<div class="stats-panel"><div class="stats"><div class="stat"><span>Time total</span><strong><a href="#sort=time_sum">19.587s</a></strong></div><div class="stat"><span>Time max</span><strong><a href="#sort=time_max">3.089s</a></strong></div><div class="stat"><span>Errors</span><strong><a href="#sort=v_count">1653</a></strong></div><div class="stat"><span>Distinct errors</span><strong><a href="#sort=dv_count">75</a></strong></div><div class="stat"><span>Warnings</span><strong><a href="#sort=w_count">2</a></strong></div><div class="stat"><span>Distinct warnings</span><strong><a href="#sort=dw_count">1</a></strong></div><div class="stat"><span>Good shapes</span><strong><a href="#sort=g_count">13696</a></strong></div><div class="stat"><span>Total shapes</span><strong><a href="#sort=t_count">13772</a></strong></div><div class="stat"><span>Validation execution errors</span><strong><a href="dashboard/all/m/execution_err/index.html">10</a></strong></div></div></div>
+Sourced from 2 GraphDB data repositories (<code>relicapgrid</code>, <code>realgrid10</code>), each using named graph <code>https://github.com/entsoe/application-profiles/SHACL/reports_multi</code> — 0 runs recorded, one latest recorded run per (data repository, SHACL file) pair (<a href="dashboard/runs/index.html">run history</a>). <br>
+History keeps the last 2 timing(s) per SHACL file per data repository and the results of the newest 1. No previous run to compare against yet.</p>
+<div class="stats-panel"><div class="stats"><div class="stat"><span>Time total</span><strong><a href="#sort=time_sum">0.000s</a></strong></div><div class="stat"><span>Time max</span><strong>—</strong></div><div class="stat"><span>Errors</span><strong></strong></div><div class="stat"><span>Distinct errors</span><strong></strong></div><div class="stat"><span>Warnings</span><strong></strong></div><div class="stat"><span>Distinct warnings</span><strong></strong></div><div class="stat"><span>Good shapes</span><strong><a href="#sort=g_count">27544</a></strong></div><div class="stat"><span>Total shapes</span><strong><a href="#sort=t_count">27544</a></strong></div><div class="stat"><span>Validation execution errors</span><strong><a href="dashboard/all/m/execution_err/index.html">212</a></strong></div></div></div>
 
 <div class="table-wrap">
 <table class="family-table compact" data-rows="dashboard/all/rows.json" data-page-size="1500">
@@ -27,7 +26,7 @@ Against the previous run, 106 of 106 files are comparable: 22 slower, 75 faster,
 <colgroup class="warnings" span="2"></colgroup>
 <thead>
 <tr>
-<th class="profile sortable" rowspan="2" data-sort="name">Repository</th>
+<th class="profile sortable" rowspan="2" data-sort="name">Data repository</th>
 <th class="num sortable" colspan="2" data-sort="time_sum">Timing</th>
 <th class="num group-err sortable" colspan="2" data-sort="v_count"><span class="icon violation" title="sh:Violation">&#10060;</span> Errors</th>
 <th class="num group-warn sortable" colspan="2" data-sort="w_count"><span class="icon warning" title="sh:Warning">&#9888;</span> Warnings</th>
@@ -44,25 +43,25 @@ Against the previous run, 106 of 106 files are comparable: 22 slower, 75 faster,
 </tr>
 </thead>
 <tbody><tr>
-<td class="profile"><a href="dashboard/r/cgmes-ap/index.html">CGMES Application Profiles</a></td>
-<td class="dur"><a href="dashboard/r/cgmes-ap/index.html#sort=time_sum">7.814s</a></td>
-<td class="dur"><a href="dashboard/r/cgmes-ap/index.html#sort=time_max">2.164s</a></td>
-<td class="num cell"><a href="dashboard/r/cgmes-ap/index.html#sort=v_count">102</a></td>
-<td class="num cell"><a href="dashboard/r/cgmes-ap/index.html#sort=dv_count">3</a></td>
+<td class="profile"><a href="dashboard/r/realgrid10/index.html">RealGridx10</a></td>
+<td class="dur"><a href="dashboard/r/realgrid10/index.html#sort=time_sum">0.000s</a></td>
+<td class="dur"><a href="dashboard/r/realgrid10/index.html#sort=time_max">—</a></td>
 <td class="num cell"></td>
 <td class="num cell"></td>
-<td class="num cell"><a href="dashboard/r/cgmes-ap/index.html#sort=g_count">8736</a></td>
-<td class="num cell"><a href="dashboard/r/cgmes-ap/index.html#sort=t_count">8739</a></td>
+<td class="num cell"></td>
+<td class="num cell"></td>
+<td class="num cell"><a href="dashboard/r/realgrid10/index.html#sort=g_count">13772</a></td>
+<td class="num cell"><a href="dashboard/r/realgrid10/index.html#sort=t_count">13772</a></td>
 </tr><tr>
-<td class="profile"><a href="dashboard/r/nc-ap/index.html">Network Code Application Profiles</a></td>
-<td class="dur"><a href="dashboard/r/nc-ap/index.html#sort=time_sum">11.773s</a></td>
-<td class="dur"><a href="dashboard/r/nc-ap/index.html#sort=time_max">3.089s</a></td>
-<td class="num cell"><a href="dashboard/r/nc-ap/index.html#sort=v_count">1551</a></td>
-<td class="num cell"><a href="dashboard/r/nc-ap/index.html#sort=dv_count">72</a></td>
-<td class="num cell"><a href="dashboard/r/nc-ap/index.html#sort=w_count">2</a></td>
-<td class="num cell"><a href="dashboard/r/nc-ap/index.html#sort=dw_count">1</a></td>
-<td class="num cell"><a href="dashboard/r/nc-ap/index.html#sort=g_count">4960</a></td>
-<td class="num cell"><a href="dashboard/r/nc-ap/index.html#sort=t_count">5033</a></td>
+<td class="profile"><a href="dashboard/r/relicapgrid/index.html">ReliCapGrid</a></td>
+<td class="dur"><a href="dashboard/r/relicapgrid/index.html#sort=time_sum">0.000s</a></td>
+<td class="dur"><a href="dashboard/r/relicapgrid/index.html#sort=time_max">—</a></td>
+<td class="num cell"></td>
+<td class="num cell"></td>
+<td class="num cell"></td>
+<td class="num cell"></td>
+<td class="num cell"><a href="dashboard/r/relicapgrid/index.html#sort=g_count">13772</a></td>
+<td class="num cell"><a href="dashboard/r/relicapgrid/index.html#sort=t_count">13772</a></td>
 </tr></tbody>
 </table></div>
 
