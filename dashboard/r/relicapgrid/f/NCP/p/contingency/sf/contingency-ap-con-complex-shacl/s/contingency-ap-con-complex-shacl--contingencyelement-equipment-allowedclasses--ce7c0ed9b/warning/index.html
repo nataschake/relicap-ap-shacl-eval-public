@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Warning · ContingencyElement.Equipment-allowedClasses</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../../../../../../../../../dashboard.css?v=6645f890d77e">
+</head>
+<body>
+<p class="crumb"><a href="../../../../../../../../../../../../index.html">All data repositories</a> · <a href="../../../../../../../../../index.html">ReliCapGrid</a> · <a href="../../../../../../../index.html">NCP</a> · <a href="../../../../../index.html">Contingency Profile</a> · <a href="../../../index.html">Contingency-AP-Con-Complex-SHACL.ttl</a> · <a href="../index.html">ContingencyElement.Equipment-allowedClasses</a> · Warning</p>
+<h1><span class="icon warning" title="sh:Warning">&#9888;</span> Warning · ContingencyElement.<wbr>Equipment-<wbr>allowedClasses</h1>
+<p class="meta">2 distinct focus nodes for this individual shape.</p>
+
+<div class="table-wrap"><table>
+<thead><tr><th>sh:focusNode</th><th>GitHub</th><th>sh:message</th><th>sh:sourceConstraint</th></tr></thead>
+<tbody><tr><td class="focus"><a href="https://cim.ontotext.com/graphdb/resource?uri=urn:uuid:4198a663-b8e6-4ed1-9212-db1448cc6018&amp;repositoryId=relicapgrid&amp;role=all" target="_blank" rel="noopener">urn:<wbr>uuid:<wbr>4198a663-<wbr>b8e6-<wbr>4ed1-<wbr>9212-<wbr>db1448cc6018</a></td><td><a href="https://github.com/search?q=repo%3Aentsoe/relicapgrid%204198a663-b8e6-4ed1-9212-db1448cc6018&amp;type=code" target="_blank" rel="noopener">GitHub</a></td><td class="msg">ContingencyEquipment.Equipment does not reference supported class type for contingency.</td><td><a href="https://github.com/entsoe/NC-AP/blob/main/NCP/SHACL/Contingency-AP-Con-Complex-SHACL.ttl#L72" target="_blank" rel="noopener">ContingencyElement.<wbr>Equipment-<wbr>allowedClasses</a></td></tr><tr><td class="focus"><a href="https://cim.ontotext.com/graphdb/resource?uri=urn:uuid:f2b616ff-07cc-464e-b750-4c80a07390ce&amp;repositoryId=relicapgrid&amp;role=all" target="_blank" rel="noopener">urn:<wbr>uuid:<wbr>f2b616ff-<wbr>07cc-<wbr>464e-<wbr>b750-<wbr>4c80a07390ce</a></td><td><a href="https://github.com/search?q=repo%3Aentsoe/relicapgrid%20f2b616ff-07cc-464e-b750-4c80a07390ce&amp;type=code" target="_blank" rel="noopener">GitHub</a></td><td class="msg">ContingencyEquipment.Equipment does not reference supported class type for contingency.</td><td><a href="https://github.com/entsoe/NC-AP/blob/main/NCP/SHACL/Contingency-AP-Con-Complex-SHACL.ttl#L72" target="_blank" rel="noopener">ContingencyElement.<wbr>Equipment-<wbr>allowedClasses</a></td></tr></tbody>
+</table></div>
+
+<script>
+(function () {
+  document.querySelectorAll("table").forEach(function (table) {
+    table.querySelectorAll("thead th").forEach(function (th) {
+      if (th.colSpan > 1) return;
+      var grip = document.createElement("span");
+      grip.className = "col-resize";
+      th.appendChild(grip);
+      grip.addEventListener("mousedown", function (event) {
+        event.preventDefault();
+        var x = event.pageX, width = th.getBoundingClientRect().width;
+        function move(e) { th.style.width = Math.max(36, width + e.pageX - x) + "px"; }
+        function up() {
+          document.removeEventListener("mousemove", move);
+          document.removeEventListener("mouseup", up);
+        }
+        document.addEventListener("mousemove", move);
+        document.addEventListener("mouseup", up);
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
